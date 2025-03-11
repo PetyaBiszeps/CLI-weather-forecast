@@ -1,0 +1,14 @@
+{
+  "name": "CLI-weather-forecast",
+  "version": "1.0.0",
+  "description": "CLI for getting weather",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["cli", "weather"],
+  "repository": "git@github.com:PetyaBiszeps/CLI-weather-forecast.git",
+  "author": "Yaroslav Petrov",
+  "license": "ISC"
+}
