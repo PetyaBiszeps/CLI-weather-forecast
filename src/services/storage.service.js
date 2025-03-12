@@ -3,6 +3,10 @@ import { join } from "path"
 import { promises } from "fs"
 
 let data = {}
+const TOKEN_DICTIONARY = {
+    token: 'token',
+    city: 'city'
+}
 const filePath = join(homedir(), "weather-data.json")
 
 const isExists = async (path) => {
@@ -32,4 +36,4 @@ const saveKeyValue = async (key, value) => {
     await promises.writeFile(filePath, JSON.stringify(data))
 }
 
-export { saveKeyValue, getKeyValue }
+export { saveKeyValue, getKeyValue, TOKEN_DICTIONARY }
